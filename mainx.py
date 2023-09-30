@@ -250,7 +250,7 @@ async def account_login(bot: Client, m: Message):
                 ytf=f"bestvideo[height<={raw_text2}]"
 
             if ytf == f'bestvideo[height<={raw_text2}][ext=mp4]+bestaudio[ext=m4a]':
-                cmd = f'yt-dlp -o "{name}.mp4" -f "{ytf}" "{url}"'
+                cmd = f'yt-dlp -o "{name}Aditya.mp4" -f "{ytf}" "{url}"'
             elif raw_text2 == "no":
                 cmd=f'yt-dlp -o "{name}.mp4" "{url}"'
             elif "jwplayer" in url:# and raw_text2 in ["144", "240", "360", "480", "720", "no"]:
@@ -330,7 +330,7 @@ async def account_login(bot: Client, m: Message):
                 continue
     except Exception as e:
         await m.reply_text(str(e))
-    await m.reply_text("Done")
+    await m.reply_text("🚦Done🚦")
 
 
 
